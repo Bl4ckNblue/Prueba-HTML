@@ -63,6 +63,15 @@ img{
     font-size: 20px;
 }
 
+#servicios a {
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: var(--color-fondo);
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-top: 20px;
+}
+
 #pie {
     background-color: var(--color-fondo-footer);
     color: var(--color-texto-footer);
