@@ -8,23 +8,37 @@
     --color-fondo-footer:#203646;
     --color-texto-footer:#C8D4E2;
 
-    
+    /* Tipografias */
+    --fuente1: "Poppins", sans-serif;
+    --fuente2: "Inter Tight", sans-serif;
+    --fuente3: Arial, Helvetica, sans-serif;
 }
 
 
 
 
 /* Selectores */
+/* Selector universal del elementos */
+*{
+    margin: 0;
+    padding: 0;
+}
 
 /* Selectores de tipo etiqueta HTML */
 h2 {
     text-align: center;
+    font-size: 30px;
+    font-weight: 900;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-family: var(--fuente1);
+    font-size: 14px;
     line-height: 1.8;
+}
+/* Elimina el espacio inferior predeterminado del objeto */
+img{
+    display: block;
 }
 
 /* Selectores de tipo identificador (id) */
@@ -95,4 +109,3 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
