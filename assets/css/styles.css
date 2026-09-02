@@ -14,14 +14,16 @@
     --fuente3: Arial, Helvetica, sans-serif;
 }
 
-
-
-
 /* Selectores */
+
 /* Selector universal del elementos */
 *{
+    /* Elimina todos los espacios predeterminados */
     margin: 0;
     padding: 0;
+
+    /* Evitar que las cajas cambien de tamaño al agregar espacios */
+    box-sizing: border-box;
 }
 
 /* Selectores de tipo etiqueta HTML */
@@ -36,6 +38,7 @@ body {
     font-size: 14px;
     line-height: 1.8;
 }
+
 /* Elimina el espacio inferior predeterminado del objeto */
 img{
     display: block;
@@ -50,6 +53,13 @@ img{
 #servicios {
     background-color: var(--color-fondo);
     color: var(--color-texto);
+}
+
+#servicios h3 { 
+    color: var(--color-principal);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 #pie {
