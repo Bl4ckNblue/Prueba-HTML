@@ -1,0 +1,98 @@
+/* Variables CSS */
+:root {
+    /* Paleta de colores */
+    --color-principal: #80BE79;
+    --color-fondo:#FFFFFF;
+    --color-texto:#344856;
+    --color-fondo-nosotros: #F2F9F2;
+    --color-fondo-footer:#203646;
+    --color-texto-footer:#C8D4E2;
+
+    
+}
+
+
+
+
+/* Selectores */
+
+/* Selectores de tipo etiqueta HTML */
+h2 {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Selectores de tipo identificador (id) */
+#nosotros {
+    background-color: var(--color-fondo-nosotros);
+    color: var(--color-texto);
+}
+
+#servicios {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+#pie {
+    background-color: var(--color-fondo-footer);
+    color: var(--color-texto-footer);
+}
+
+#pie a {
+    color: var(--color-fondo);
+    text-decoration: none; /* Quita el subrayado */
+    transition: all 0.4s ease-in-out;
+}
+
+#pie a:hover {
+    color: var(--color-principal);
+}
+
+
+/* Selectores de tipo clase (class) */
+.container {
+    max-width: 70%;
+    margin: auto;
+}
+
+.padding-xl {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.padding-xs {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Flexbox: Alineación flexible en fila */
+.row {
+    display: flex; /* Activa flexbox */
+    flex-direction: row; /* Orientación en fila */
+    gap: 20px; /* Espacio entre cajas */
+}
+
+
+/* Ajusta la imagen al ancho de su caja padre */
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.logo-ancho {
+    width: 200px;
+}
+
+/* Barra de navegación */
+.nav-bar, .footer-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
