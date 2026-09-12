@@ -1,0 +1,299 @@
+/* Variables CSS */
+:root {
+    /* Paleta de colores */
+    --color-principal: #3fd0d4;
+    --color-secundario: #505050;
+    --color-fondo: #FFFFFF;
+    --color-texto: #212121;
+    --color-fondo-nosotros: #F7F2EC;
+    --color-texto-footer: #a9a9a9;
+
+    /* Tipografías */
+    --fuente1: "Poppins", sans-serif;
+    --fuente2: "Satisfy", cursive;
+}
+
+/* Selectores */
+
+/* Selector universal de elementos */
+* {
+    /* Elimina todos los espacios predeterminados */
+    margin: 0;
+    padding: 0;
+
+    /* Evitar que las cajas cambien de tamaño al agregar espacios */
+    box-sizing: border-box;
+}
+
+/* Selectores de tipo etiqueta HTML */
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--color-texto);
+}
+
+h3 {
+    color: var(--color-principal);
+    text-transform: uppercase;
+}
+
+body {
+    font-family: var(--fuente1);
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--color-secundario);
+}
+
+/* Elimina el espacio inferior predeterminado del objeto */
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    /* Quita el subrayado de los enlaces */
+}
+
+/* Oculta visualmente el h1 pero lo mantiene accesible para lectores de pantalla y SEO */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Selectores de tipo identificador (id) */
+#destinos {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+#destinos h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#destinos a {
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: var(--color-fondo);
+    padding: 8px 16px;
+    margin-top: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+#destinos a:hover {
+    background-color: var(--color-secundario);
+}
+
+#datos {
+    background-color: var(--color-secundario);
+    color: var(--color-fondo);
+    text-align: center;
+}
+
+/* Centrar los 4 bloques de estadísticas */
+#datos .row {
+    justify-content: center;
+    gap: 60px;
+    /* separa un poco más los bloques al centrarlos */
+}
+
+#datos strong {
+    display: block;
+    color: var(--color-principal);
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+#datos p {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#nosotros {
+    background-color: var(--color-fondo-nosotros);
+    color: var(--color-texto);
+}
+
+#nosotros a {
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: var(--color-fondo);
+    padding: 8px 16px;
+    margin-top: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+#nosotros a:hover {
+    background-color: var(--color-secundario);
+}
+
+#servicios {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+#servicios h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#servicios a {
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: var(--color-fondo);
+    padding: 8px 16px;
+    margin-top: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+#servicios a:hover {
+    background-color: var(--color-secundario);
+}
+
+#testimonios {
+    background-color: var(--color-fondo-nosotros);
+    color: var(--color-texto);
+}
+
+#testimonios p {
+    font-style: italic;
+}
+
+#testimonios strong {
+    display: block;
+    color: var(--color-secundario);
+    margin-top: 15px;
+}
+
+#equipo {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    text-align: center;
+}
+
+#equipo h3 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* Centrar las 4 tarjetas del equipo */
+#equipo .row {
+    justify-content: center;
+}
+
+#galeria {
+    background-color: var(--color-fondo-nosotros);
+    color: var(--color-texto);
+}
+
+/* Títulos de sección con tipografía decorativa Satisfy */
+#destinos h2,
+#nosotros h2,
+#servicios h2,
+#testimonios h2,
+#equipo h2 {
+    font-family: var(--fuente2);
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+#pie {
+    background-color: var(--color-secundario);
+    color: var(--color-texto-footer);
+}
+
+#pie a {
+    color: var(--color-fondo);
+    margin-left: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+#pie a:hover {
+    color: var(--color-principal);
+}
+
+/* Selectores de tipo clase (class) */
+.container {
+    max-width: 70%;
+    margin: auto;
+}
+
+.padding-xl {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.padding-xs {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Flexbox: Alineación flexible en fila */
+.row {
+    display: flex;
+    /* Activa flexbox */
+    flex-direction: row;
+    /* Orientación en fila */
+    gap: 20px;
+    /* Espacio entre cajas */
+    min-width: 0;
+    /* evita que la fila se desborde de su contenedor */
+}
+
+/* Permite que las columnas e imágenes se encojan correctamente dentro del row */
+.row>* {
+    min-width: 0;
+}
+
+/* Ajusta la imagen al ancho de su caja padre */
+.img-fluid {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.logo-ancho {
+    width: 200px;
+}
+
+/* Barra de navegación */
+.nav-bar,
+.footer-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Enlaces del menú superior */
+.nav-bar a {
+    color: var(--color-texto);
+    font-weight: 600;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-bar a:hover {
+    color: var(--color-principal);
+}
+
+/* Menú en una sola fila horizontal */
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    white-space: nowrap;
+}
